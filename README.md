@@ -9,10 +9,10 @@ Terraform folder:
 6. vpc.tf - create vpc, public subnet, private subnet, internet gateway and route table with rules
 
 Python folder:
-primenumberapp.py - small application that checks if number input from user is a primary number
-requirements.txt - list of existing dependencies required for installation to run the primenumberapp program
-dockerfile - required commands to run the docker image creation
+1. primenumberapp.py - small application that checks if number input from user is a primary number
+2. requirements.txt - list of existing dependencies required for installation to run the primenumberapp program
+3. dockerfile - required commands to run the docker image creation
 
 Root folder:
-buildandpush.yml - YAML file to build and push the dockerfile (containing the python program) to a docker registry in azure
-build and push to container registry.png - screenshot of the settings in azuure build pipeline for the build and push to docker registry stage
+1. buildandpush.yml - YAML file to build and push the dockerfile (containing the python program) to a docker registry in azure
+2. build and push to container registry.png - screenshot of the settings in azuure build pipeline for the build and push to docker registry stage
