@@ -1,0 +1,18 @@
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    exclude:
+    - README.md
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Docker@2
+  inputs:
+    containerRegistry: 'containerregistry1'
+    repository: 'primenumberapp'
+    command: 'buildAndPush'
+    Dockerfile: './Dockerfile'
